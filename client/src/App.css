@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family:"poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 40px;
+  height: 200px;
+  width: 500px;
+}
+
+.title {
+  background-color: rebeccapurple;
+  color: white;
+  width: 96%;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px;
+  position: relative;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.footer {
+  background-color: rebeccapurple;
+  color: white;
+  width: 96%;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.createPostPage {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 40px;
+  height: auto;
+  width: 500px;
+  padding: 50px;
+  border: solid 2px rebeccapurple;
+}
+
+label {
+  font-size: large;
+}
+
+#inputTitle {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  width: 96%;
+  font-family: "poppins"
+}
+
+#inputPost {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  width: 96%;
+  font-family: "poppins";
+}
+
+#inputUsername {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  width: 96%;
+  font-family: "poppins";
+}
+
+.btn {
+  margin: 10px;
+  padding: 12px;
+  width: 101%;
+  background-color: rebeccapurple;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: red;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+
+.navbar .logout {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.postpage {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.topside {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  box-shadow: 10px 0px 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 40px;
+  height: 250px;
+  width: 500px;
+  
+}
+
+.footer_ts {
+  background-color: rebeccapurple;
+  color: white;
+  width: 96%;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottomside {
+  border: 2px solid rebeccapurple;
+  border-top-style: none;
+  /* box-shadow: 10px 0px 25px 0 rgba(0, 0, 0, 0.3); */
+  height: 250px;
+  width: 496px;
+  margin-top: -40px;
+  margin-left: 40px;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.listOfComments {
+  display: flex;
+  flex-direction: column;
+  flex: 0.85;
+  margin: 5px;
+  overflow: scroll;
+
+}
+
+.comment {
+  padding: 3px;
+  border: 1px solid rebeccapurple;
+  margin: 5px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.label {
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  font-size: smaller;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25px;
+}
+
+.addCommentContainer {
+  display: flex;
+  flex: 0.15;
+  width: 100%;
+  font-family:"poppins";
+}
+
+input {
+  display: flex;
+  flex: 0.85;
+  outline: rebeccapurple;
+  padding: 10px;
+  font-family:"poppins";
+  font-size: small;
+}
+
+.comment_btn {
+  display: flex;
+  flex: 0.15;
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  font-family:"poppins";
+  padding: 5px;
+}
+
+.listOfComments::-webkit-scrollbar {
+  display: none;
+}
+
+.logout {
+  outline: none;
+  height: 35px;
+  width: 70px;
+  margin: 10px;
+  font-family:"poppins";
+  cursor: pointer;
+}
+
+.logout:hover {
+  opacity: 0.95;
+}
+
+.password_btn {
+  outline: none;
+  height: 35px;
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  font-family:"poppins";
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.welcome {
+  font-family: "poppins";
+  color: white;
+  font-size: medium;
+  margin-left: 10px;
+}
+
+.com_delete {
+  font-family: "poppins";
+  border: none;
+  background-color: rebeccapurple;
+  color: white;
+  position: absolute;
+  border-radius: 3px;
+  right: 0;
+  top: 0;
+}
+
+.like {
+  border: none;
+  height: 30px;
+  width: 70px;
+  font-family:"poppins";
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  text-align: center;
+}
+
+.like_btn {
+  font-size: smaller;
+  color: white;
+}
+
+.unlike_btn {
+  color: rgb(155, 155, 155);
+}
+
+.like_label {
+  font-size: small;
+  margin: 4px;
+  position: absolute;
+} 
+
+.deletepost {
+  display: none;
+  border: none;
+  background-color: transparent;
+  height: 5px;
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.title:hover .deletepost {
+  display: block;
+}
+
+.delIcon {
+  color: white;
+}
+
+.username {
+  font-size: medium;
+  text-decoration: none;
+  color: white;
+}
+
+.basicInfo {
+  text-align: center;
+  font-size: small;
+  background-color: white;
+  color: rebeccapurple;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rebeccapurple;
+  border-radius: 3px;
+  box-shadow: 10px 0px 25px 0 rgba(0, 0, 0, 0.3);
+}
